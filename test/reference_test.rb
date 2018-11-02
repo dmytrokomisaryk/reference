@@ -5,7 +5,19 @@ class ReferenceTest < Minitest::Test
     refute_nil ::Reference::VERSION
   end
 
-  def test_it_does_something_useful
-    assert false
+  def test_check_generating_code
+    reference = Reference::Builder.new.generate
+    assert reference
+  end
+
+  def test_check_generating_code_not_empty_string
+    reference = Reference::Builder.new.generate
+    assert reference != ''
+  end
+
+  def test_check_generating_uniq_code
+    reference1 = Reference::Builder.new.generate
+    reference2 = Reference::Builder.new.generate
+    assert reference1 != reference2
   end
 end

@@ -18,4 +18,15 @@ Or install it yourself as:
 
 ## Usage
 
-rails generate reference_migration MODEL_NAME
+
+```
+$ rails generate reference_migration MODEL_NAME
+$ rails db:migrate
+```
+
+#### To generate code:
+
+```ruby
+reference = Reference::Builder.new.generate
+```
+

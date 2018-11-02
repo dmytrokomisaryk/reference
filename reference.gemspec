@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["dmytro.komisaryk"]
   spec.email         = ["dmytrokomisaryk@gmail.com"]
 
-  spec.summary       = %q{A gem to generate reference code}
-  spec.description   = %q{Uniq code with by the '[A-Z]{3}-\\d{3}' pattern}
+  spec.summary       = %q{A gem to generate reference code to needed model}
+  spec.description   = %q{Uniq code with by the '[A-Z]{3}-\\d{3}' pattern. Generate migration with reference field for particular Model}
   spec.homepage      = "https://github.com/dmytrokomisaryk/reference"
 
   spec.files         = Dir.chdir(File.expand_path('..', __FILE__)) do
